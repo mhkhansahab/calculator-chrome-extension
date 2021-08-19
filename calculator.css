@@ -1,0 +1,9 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: lightblue;
+    height: 300px;
+    width: 250px
+}

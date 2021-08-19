@@ -1,0 +1,16 @@
+{
+    "name": "Calculator",
+    "description" : "A Calculator for your Daiy Math",
+    "version" : "1.0",
+    "manifest_version": 3,
+    "background" : {
+        "service_worker" : "background.js"
+    },
+    "permissions" : ["storage"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "64": "/images/1.png"
+            }
+    }
+}
