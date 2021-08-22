@@ -1,3 +1,6 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 html,body{
     margin: 0;
     padding: 0;
@@ -5,5 +8,32 @@ html,body{
 .container{
     background-color: lightblue;
     height: 300px;
-    width: 250px
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+.row > div{
+    background-color: white;
+    width: fit-content;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 1px;
+}
+.result{
+    height: 70px;
+    width: 80%;
+    background-color: white;
+    margin: 0px auto;
 }
