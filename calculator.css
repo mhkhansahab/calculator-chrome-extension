@@ -37,3 +37,10 @@ html,body{
     background-color: white;
     margin: 0px auto;
 }
+#reset-btn{
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 4px 10px;
+    cursor: pointer;
+}

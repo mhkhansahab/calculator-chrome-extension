@@ -3,11 +3,22 @@
     "description" : "A Calculator for your Daiy Math",
     "version" : "1.0",
     "manifest_version": 3,
-    "permissions" : ["storage"],
     "action": {
         "default_popup": "index.html",
         "default_icon": {
             "64": "/images/1.png"
             }
-    }
+    },
+    "background": {
+        "service_worker": "eventPage.js"
+      },
+    "content_scripts": [
+        {
+            "matches": ["https://developer.chrome.com/*"],
+            "js" : ["content.js"],
+            "css" : ["content.css"]
+        }
+    ],
+    "permissions": ["tabs"],
+    "host_permissions" : ["https://developer.chrome.com/*"]
 }
